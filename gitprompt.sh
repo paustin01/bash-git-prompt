@@ -5,39 +5,41 @@ __GIT_PROMPT_DIR=~/.bash
 ResetColor="\[\033[0m\]"      # Text Reset
 
 # Regular Colors
-Red="\[\033[0;31m\]"          # Red
-Yellow="\[\033[0;33m\]"       # Yellow
-Blue="\[\033[0;34m\]"         # Blue
+Red="\[\033[0;31m\]"
+Green="\[\033[0;32m\]"
+Gold="\[\033[0;33m\]"
+BlueGray="\[\033[0;34m\]"
+Magenta="\[\033[0;35m\]"
+BlueGreen="\[\033[0;36m\]"
+White="\[\033[0;37m\]"
 
-# Bold
-BGreen="\[\033[1;32m\]"       # Green
+# Vibrant colors
+Orange="\[\033[1;31m\]"
+Lime="\[\033[1;32m\]"
+Yellow="\[\033[1;33m\]"
+Blue="\[\033[1;34m\]"
+Pink="\[\033[1;35m\]"
+Cyan="\[\033[1;36m\]"
+BrightWhite="\[\033[1;37m\]"
 
-# High Intensty
-IBlack="\[\033[0;90m\]"       # Black
-ICyan="\[\033[0;96m\]"        # High intensity Cyan
-IYellow="\[\033[0;93m\]"      # High intensity Yellow
-IGreen="\[\033[0;92m\]"       # High intensity Green
-
-# Bold High Intensty
-Magenta="\[\033[1;95m\]"      # Purple
 
 # Various variables you might want for your PS1 prompt instead
 Time12a="\T "
 PathShort="\w"
 
 # Default values for the appearance of the prompt. Configure at will.
-GIT_PROMPT_PREFIX="${IGreen}("
-GIT_PROMPT_SUFFIX="${IGreen})$ResetColor"
+GIT_PROMPT_PREFIX="${White}["
+GIT_PROMPT_SUFFIX="${White}]$ResetColor"
 GIT_PROMPT_SEPARATOR="|"
-GIT_PROMPT_BRANCH="${IGreen}"
+GIT_PROMPT_BRANCH="${BlueGray}"
 GIT_PROMPT_STAGED="${Red}● "
 GIT_PROMPT_CONFLICTS="${Red}✖ "
-GIT_PROMPT_CHANGED="${IGreen}✚ "
+GIT_PROMPT_CHANGED="${Green}✚ "
 GIT_PROMPT_REMOTE=" "
 GIT_PROMPT_UNTRACKED="…"
-GIT_PROMPT_CLEAN="${BGreen}✔"
+GIT_PROMPT_CLEAN="${Green}✔ "
 
-PROMPT_START="\n$IBlack$Time12a$ResetColor$IYellow$PathShort$ResetColor"
+PROMPT_START="\n$Time12a$ResetColor$Gold$PathShort$ResetColor"
 PROMPT_END="\n$ResetColor$ "
 
 
